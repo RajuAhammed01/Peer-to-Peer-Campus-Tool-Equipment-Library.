@@ -45,7 +45,6 @@ function renderUserNav(isLoggedIn, user = null) {
     navContainer.innerHTML = `
       <a href="dashboard.php" class="nav-link"><i class="fa fa-tachometer-alt"></i> <span>Dashboard</span></a>
       <a href="add_item.php" class="nav-link"><i class="fa fa-plus-circle"></i> <span>List Equipment</span></a>
-      <a href="report.php" class="nav-link"><i class="fa fa-file-alt"></i> <span>Lab Report</span></a>
       <div style="display:flex;align-items:center;gap:10px;margin-left:10px;padding-left:10px;border-left:1px solid rgba(255,255,255,0.1);">
         <span style="font-size:0.85rem;color:#10b981;font-weight:600;"><i class="fa fa-user-circle"></i> ${escapeHtml(user.full_name.split(' ')[0])}</span>
         <button onclick="handleLogout()" class="btn btn-outline btn-sm"><i class="fa fa-sign-out-alt"></i> Logout</button>
@@ -53,7 +52,6 @@ function renderUserNav(isLoggedIn, user = null) {
     `;
   } else {
     navContainer.innerHTML = `
-      <a href="report.php" class="nav-link"><i class="fa fa-file-alt"></i> <span>Lab Report</span></a>
       <a href="login.php" class="btn btn-outline btn-sm"><i class="fa fa-sign-in-alt"></i> Login</a>
       <a href="register.php" class="btn btn-primary btn-sm"><i class="fa fa-user-plus"></i> Register</a>
     `;

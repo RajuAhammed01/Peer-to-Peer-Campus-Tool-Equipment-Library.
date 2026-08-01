@@ -25,7 +25,6 @@ $currentUser = getCurrentUser();
       </a>
 
       <nav id="userNavContainer" class="nav-links">
-        <a href="report.php" class="nav-link"><i class="fa fa-file-alt"></i> <span>Lab Report</span></a>
         <?php if ($currentUser): ?>
           <a href="dashboard.php" class="nav-link"><i class="fa fa-tachometer-alt"></i> <span>Dashboard</span></a>
           <a href="add_item.php" class="nav-link"><i class="fa fa-plus-circle"></i> <span>List Equipment</span></a>

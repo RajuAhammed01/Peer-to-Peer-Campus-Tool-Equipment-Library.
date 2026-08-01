@@ -23,7 +23,6 @@ $user = requireLogin();
       <nav class="nav-links">
         <a href="index.php" class="nav-link"><i class="fa fa-search"></i> Catalog</a>
         <a href="add_item.php" class="nav-link"><i class="fa fa-plus-circle"></i> List Equipment</a>
-        <a href="report.php" class="nav-link"><i class="fa fa-file-alt"></i> Lab Report</a>
         <button onclick="handleLogout()" class="btn btn-outline btn-sm"><i class="fa fa-sign-out-alt"></i> Logout</button>
       </nav>
     </div>
